@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="432.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bloodbank.frontend.controllers.SampleLoginController">
+   <children>
+      <Pane prefHeight="118.0" prefWidth="807.0" style="-fx-background-color: #000;">
+         <children>
+            <Label layoutX="236.0" layoutY="27.0" text="Sample Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="53.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="close" layoutX="377.0" layoutY="382.0" mnemonicParsing="false" onAction="#closeHandle" text="Close" />
+      <TextArea layoutX="160.0" layoutY="134.0" prefHeight="238.0" prefWidth="487.0" promptText="Admin" text="Admin:&#10;&#10;Email - admin@admin.net&#10;Password - admin&#10;&#10;User:&#10;&#10;Email - user@user.net&#10;Password - user" />
+   </children>
+</AnchorPane>

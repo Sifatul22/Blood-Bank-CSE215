@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="671.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bloodbank.frontend.controllers.DonorListController">
+   <children>
+      <Pane prefHeight="118.0" prefWidth="1000.0" style="-fx-background-color: #000;">
+         <children>
+            <Label layoutX="120.0" layoutY="22.0" text="BLOOD DONOR LIST" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="53.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="tableView" layoutX="57.0" layoutY="166.0" prefHeight="441.0" prefWidth="905.0">
+        <columns>
+            <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="name" prefWidth="167.0" text="NAME" />
+          <TableColumn fx:id="blood_group" prefWidth="215.0" text="BLOOG GROUP" />
+            <TableColumn fx:id="area" prefWidth="254.0" text="AREA" />
+            <TableColumn fx:id="contact" prefWidth="192.0" text="CONTACT" />
+        </columns>
+      </TableView>
+      <Button fx:id="close" layoutX="471.0" layoutY="630.0" mnemonicParsing="false" onAction="#closeHandle" text="Close" />
+      <Label layoutX="69.0" layoutY="139.0" text="* Double click to view/update!">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
